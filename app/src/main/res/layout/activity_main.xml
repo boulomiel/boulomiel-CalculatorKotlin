@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/screen"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="viewEnd"
+            android:textSize="50sp"
+            android:background="@color/colorAccent"
+            android:enabled="false"
+            android:layout_above="@id/tableLayout"
+            android:layout_alignLeft="@+id/tableLayout"
+            android:layout_alignRight="@+id/tableLayout"
+            android:gravity="end" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <Button
+                android:id="@+id/percent_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="%"
+                android:textSize="30sp"
+                android:tag="12"
+                />
+            <Button
+                android:id="@+id/multi_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="*"
+                android:textSize="30sp"
+                android:tag="11"
+                />
+            <Button
+                android:id="@+id/divide_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="/"
+                android:textSize="30sp"
+                android:tag="10"
+                />
+            <Button
+                android:id="@+id/minus_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:textSize="30sp"
+                android:text="-"
+                android:tag="13"
+                />
+
+
+        </TableRow>
+        <TableRow>
+        <Button
+            android:id="@+id/seven_btn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="7"
+            android:textSize="30sp"
+            android:tag="7"
+            />
+        <Button
+            android:id="@+id/eight_btn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="8"
+            android:textSize="30sp"
+            android:tag="8"
+            />
+        <Button
+            android:id="@+id/nine_btn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="9"
+            android:textSize="30sp"
+            android:tag="9"
+            />
+            <Button
+                android:id="@+id/plus_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="+"
+                android:textSize="30sp"
+                android:tag="14"
+                />
+
+
+
+    </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/four_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="4"
+                android:textSize="30sp"
+                android:tag="4"
+                />
+            <Button
+                android:id="@+id/five_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="5"
+                android:textSize="30sp"
+                android:tag="5"
+                />
+            <Button
+                android:id="@+id/six_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="6"
+                android:textSize="30sp"
+                android:tag="6"
+                />
+            <Button
+                android:id="@+id/negatif_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="+/-"
+                android:textSize="30sp"
+                android:tag="16"
+                />
+
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/one_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="1"
+                android:textSize="30sp"
+                android:tag="1"
+                />
+            <Button
+                android:id="@+id/two_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="2"
+                android:textSize="30sp"
+                android:tag="2"
+                />
+            <Button
+                android:id="@+id/three_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="3"
+                android:textSize="30sp"
+                android:tag="3"
+                />
+
+
+
+            <Button
+                android:id="@+id/clean_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:text="AC"
+                android:textSize="30sp"
+                android:tag="15"
+                />
+
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignLeft="@+id/tableLayout"
+        >
+        <Button
+            android:id="@+id/zero_btn"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="0"
+            android:textSize="30sp"
+            android:tag="0"
+            />
+
+        <Button
+            android:id="@+id/psik_btn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text=","
+            android:textSize="30sp"
+            android:tag="16"
+
+            />
+
+        <Button
+            android:id="@+id/result_btn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="="
+            android:textSize="30sp"
+            android:tag="17"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
